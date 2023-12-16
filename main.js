@@ -367,3 +367,30 @@ const jsonData = JSON.parse(data);
 
 const dataDesc = jsonData.sort((a, b) => a.x - b.x);
 console.table(dataDesc);
+
+const modules = {
+  0: '0%',
+  1: '10%',
+  2: '20%',
+  3: '30%',
+  4: '40%',
+  5: '50%',
+  6: '60%',
+  7: '70%',
+  8: '80%',
+  9: '90%',
+  10: '100%',
+};
+
+console.log(typeof modules);
+
+// iteración en modules
+const modulesAsc = Object.keys(modules).forEach((key) => {
+  let value = modules[key];
+  console.log(`${key} = ${value}`);
+});
+
+const moduleData = Object.keys(modules);
+console.log(moduleData);
+
+// código de graph
